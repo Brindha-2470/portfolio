@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brindha S. — Developer Portfolio</title>
+<meta name="description" content="Portfolio of Brindha S., B.Tech Artificial Intelligence and Data Science student interested in data analytics, data engineering and web development.">
+<meta name="theme-color" content="#8ecdf5">
+<meta property="og:title" content="Brindha S. — Developer Portfolio">
+<meta property="og:description" content="B.Tech AI and Data Science student building practical projects in data and web development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e6f4fc;--bg2:#f7fcff;--card:#fff;--ink:#0b1b2b;--mute:#4f6579;--line:rgba(11,27,43,.13);--sky:#8ecdf5;--sky2:#2b8fd1;--r:24px;
+--h:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--b:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--m:"JetBrains Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
+body{margin:0;background:linear-gradient(180deg,var(--bg) 0,var(--bg2) 50%,var(--bg) 100%);color:var(--ink);font:400 1rem/1.7 var(--b);overflow-x:hidden;padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3{font-family:var(--h);line-height:1.04;letter-spacing:-.025em;margin:0}
+.w{width:min(1160px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4rem,9vw,7rem) 0}
+.eyebrow{font:500 .76rem var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--sky2);display:block;margin-bottom:1rem}
+h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;max-width:18ch}
+.sub{color:var(--mute);max-width:60ch;margin:1rem 0 2.6rem;font-size:1.05rem}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--ink);color:#fff;padding:.5rem 1rem;border-radius:10px;z-index:99}
+:focus-visible{outline:2px solid var(--sky2);outline-offset:3px;border-radius:8px}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:30;padding-top:env(safe-area-inset-top,0px);background:rgba(230,244,252,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;font:800 1.15rem var(--h)}
+.logo i{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--sky);font:700 .78rem var(--m);font-style:normal}
+nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;font-size:.92rem;color:var(--mute);transition:color .2s}nav ul a:hover{color:var(--ink)}
+.hr{display:flex;gap:.7rem;align-items:center}
+#menu{display:none;min-width:46px;min-height:46px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;color:var(--ink);font-size:1.15rem;cursor:pointer}
+@media(max-width:940px){#menu{display:block}.hr .btn{display:none}
+nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line);padding:.4rem 1.25rem 1rem}
+nav ul.open{display:flex}nav ul a{display:block;padding:.85rem 0;font-size:1.02rem;border-bottom:1px solid var(--line)}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.65rem 1.5rem;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);font:600 .95rem var(--b);text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);background:var(--ink);color:#fff}
+.btn.p{background:var(--ink);color:#fff}.btn.p:hover{background:var(--sky2);border-color:var(--sky2)}
+.btn.s{min-height:42px;padding:.45rem 1.15rem;font-size:.88rem}
+.row{display:flex;flex-wrap:wrap;gap:.8rem}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:6.5rem 0 3rem}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.kick{display:inline-flex;gap:.6rem;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.65);border-radius:999px;padding:.38rem 1rem;font:500 .78rem var(--m);color:var(--mute);margin-bottom:1.5rem}
+.kick b{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(3rem,8vw,6rem);font-weight:800}h1 em{font-style:normal;color:var(--sky2)}
+.lead{color:var(--mute);max-width:48ch;font-size:1.12rem;margin:1.5rem 0 2rem}.lead b{color:var(--ink)}
+.pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.8rem;padding:0;list-style:none}
+.pills li{font:500 .8rem var(--m);color:var(--mute);border:1px solid var(--line);border-radius:999px;padding:.3rem .85rem;background:rgba(255,255,255,.55)}
+.ph{margin:0;position:relative;justify-self:center;width:min(100%,430px)}
+.ph::before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:32px;background:var(--sky);z-index:0}
+.ph img{position:relative;z-index:1;width:100%;height:auto;aspect-ratio:4/5;background:var(--sky);object-fit:cover;object-position:50% 18%;border-radius:32px;border:3px solid var(--ink)}
+.ph figcaption{position:absolute;z-index:2;left:-14px;bottom:28px;background:var(--card);border:2px solid var(--ink);border-radius:16px;padding:.6rem .95rem;font:500 .74rem/1.4 var(--m);letter-spacing:.06em}
+.ph figcaption b{display:block;font:800 1rem var(--h);letter-spacing:0}
+@media(max-width:940px){.hero .w{grid-template-columns:1fr}.ph{order:-1;width:min(76%,340px)}.hero{padding-top:5.5rem}}
+
+/* ticker */
+.band{background:var(--ink);color:#fff;overflow:hidden;padding:1rem 0}
+.band div{display:flex;gap:2.5rem;width:max-content;animation:mq 28s linear infinite;font:700 1.05rem var(--h);letter-spacing:.06em;text-transform:uppercase}
+.band span{display:flex;gap:2.5rem;align-items:center;white-space:nowrap}.band span::after{content:"•";color:var(--sky)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* about */
+.ab{display:grid;grid-template-columns:.8fr 1.2fr;gap:2.5rem;align-items:stretch}
+.pr{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;display:flex;flex-direction:column;justify-content:space-between;gap:2.5rem;min-height:260px;position:relative;overflow:hidden}
+.pr::after{content:"";position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(142,205,245,.6),transparent 70%)}
+.pr small{font:500 .74rem var(--m);letter-spacing:.12em;text-transform:uppercase;color:var(--sky);position:relative}
+.pr p{font:800 clamp(1.7rem,3.4vw,2.4rem)/1.1 var(--h);margin:0;position:relative}
+.pr span{font:500 .8rem var(--m);color:#9fb4c6;position:relative}
+.abt h3{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:1rem}.abt p{color:var(--mute);margin:0 0 1rem}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:1.6rem}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.1rem 1.25rem}
+.fact dt{font:500 .7rem var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--sky2)}.fact dd{margin:.3rem 0 0;font:700 1.05rem/1.3 var(--h)}
+@media(max-width:900px){.ab{grid-template-columns:1fr}.pr{min-height:200px}}
+
+/* toolkit */
+.sk{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:.5rem clamp(1.3rem,3vw,2.2rem);max-width:900px}
+.skr{padding:1.7rem 0;border-top:1px solid var(--line)}.skr:first-child{border-top:0}
+.skr h3{font-size:clamp(1.25rem,2.6vw,1.55rem);font-weight:700;margin-bottom:1rem}
+.skr ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.skr li{font:600 .95rem var(--b);background:#d3ecfb;color:var(--ink);border:1px solid rgba(43,143,209,.35);border-radius:999px;padding:.55rem 1.3rem;transition:background .2s,color .2s,transform .2s}
+.skr li:hover{background:var(--sky2);border-color:var(--sky2);color:#fff;transform:translateY(-2px)}
+
+/* projects */
+.pl{display:grid;gap:1.4rem}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(1.5rem,3.2vw,2.4rem);transition:transform .25s,box-shadow .25s,border-color .25s}
+.pc:hover{transform:translateY(-4px);border-color:var(--sky2);box-shadow:0 28px 54px -32px rgba(43,143,209,.55)}
+.ptop{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:1.4rem}
+.pn{font:500 .76rem var(--m);color:var(--sky2);letter-spacing:.12em;text-transform:uppercase}
+.st{font:500 .72rem var(--m);letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--ink);border-radius:999px;padding:.2rem .8rem}
+.pc h3{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:800}
+.pt{font:500 .78rem var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin:.5rem 0 1.1rem}
+.pc>p{color:var(--mute);margin:0 0 1.4rem;max-width:70ch}
+.fl{display:grid;gap:.8rem;grid-template-columns:1fr 1fr;margin-bottom:1.4rem}
+.fl div{background:var(--bg);border-radius:16px;padding:1rem 1.2rem}
+.fl small{font:500 .68rem var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--sky2);display:block;margin-bottom:.25rem}
+.fl span{font-weight:500;font-size:.96rem}
+.chips{list-style:none;padding:0;margin:0 0 1.4rem;display:flex;flex-wrap:wrap;gap:.45rem}
+.chips li{font:500 .8rem var(--m);border:1px solid var(--line);border-radius:999px;padding:.28rem .8rem}
+@media(max-width:700px){.fl{grid-template-columns:1fr}}
+
+/* journey */
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:1rem;max-width:860px}
+.tl li{display:grid;grid-template-columns:70px 1fr;gap:1.2rem;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem 1.6rem}
+.tl .no{font:800 2.2rem/1 var(--h);color:var(--sky)}
+.tl time{font:500 .74rem var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--sky2)}
+.tl h3{font-size:1.35rem;margin:.25rem 0 .4rem}.tl p{color:var(--mute);margin:0}
+@media(max-width:560px){.tl li{grid-template-columns:1fr;gap:.4rem}}
+
+/* courses */
+.cg{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.cc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.6rem;display:flex;flex-direction:column;gap:.5rem;transition:transform .25s,border-color .25s}
+.cc:hover{transform:translateY(-3px);border-color:var(--sky2)}
+.cc small{font:500 .72rem var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--sky2)}.cc h3{font-size:1.25rem}.cc p{color:var(--mute);margin:0;font-size:.95rem}
+
+/* contact */
+.ct{background:var(--ink);color:#fff;border-radius:34px;padding:clamp(2rem,6vw,4.5rem);position:relative;overflow:hidden}
+.ct::after{content:"";position:absolute;right:-110px;top:-110px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(142,205,245,.55),transparent 70%);pointer-events:none}
+.ct .eyebrow{color:var(--sky);position:relative}.ct h2{color:#fff;position:relative}.ct .sub{color:#b8cadb;position:relative}
+.lc{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));position:relative}
+.lc a{display:flex;justify-content:space-between;align-items:center;gap:1rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.35);border-radius:20px;padding:1.2rem 1.4rem;transition:background .2s,color .2s,transform .2s}
+.lc a:hover{background:var(--sky);color:var(--ink);border-color:var(--sky);transform:translateY(-3px)}
+.lc b{display:block;font:700 1.15rem var(--h)}.lc small{font:400 .8rem var(--b);opacity:.8}.lc i{font:600 1.4rem var(--b);font-style:normal}
+footer{padding:2rem 0 2.6rem;color:var(--mute);font-size:.9rem}footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem}
+footer nav a{margin-left:1.2rem;text-decoration:none}footer nav a:hover{color:var(--ink)}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.band div{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body id="home">
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="w">
+<a class="logo" href="#home"><i>BS</i>Brindha.</a>
+<nav aria-label="Main"><ul id="nav">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li><li><a href="#courses">Courses</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav>
+<div class="hr"><a class="btn s" href="Brindha_S_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a><button id="menu" aria-label="Menu" aria-expanded="false">☰</button></div>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="w">
+<div>
+<span class="kick"><b></b>B.Tech AI &amp; DS · 2024—2028</span>
+<h1>From data to <em>working ideas.</em></h1>
+<p class="lead">Hi, I'm <b>Brindha S.</b> I'm a student who enjoys learning data analytics, data engineering and web development by building small, practical projects, and I'm looking for an internship to grow those skills.</p>
+<div class="row">
+<a class="btn p" href="#projects">Explore my work ↘</a>
+<a class="btn" href="Brindha_S_Resume.pdf" target="_blank" rel="noopener">View resume ↗</a>
+<a class="btn" href="https://www.linkedin.com/in/brindha-s-185b3434a/" target="_blank" rel="noopener">LinkedIn ↗</a>
+<a class="btn" href="https://github.com/Brindha-2470" target="_blank" rel="noopener">GitHub ↗</a>
+</div>
+<ul class="pills"><li>Data analytics</li><li>Data engineering</li><li>Web development</li></ul>
+</div>
+<figure class="ph"><img src="brindha.jpg" alt="Portrait of Brindha S." width="420" height="525" fetchpriority="high" onerror="this.removeAttribute('src');this.alt='Add brindha.jpg next to index.html'"><figcaption><b>Data tells the story.</b>ASK · ANALYSE · BUILD</figcaption></figure>
+</div></section>
+
+<div class="band" aria-hidden="true"><div>
+<span>Portfolio / 2026</span><span>Data Analytics</span><span>Data Engineering</span><span>Web Development</span>
+<span>Portfolio / 2026</span><span>Data Analytics</span><span>Data Engineering</span><span>Web Development</span>
+<span>Portfolio / 2026</span><span>Data Analytics</span><span>Data Engineering</span><span>Web Development</span>
+<span>Portfolio / 2026</span><span>Data Analytics</span><span>Data Engineering</span><span>Web Development</span>
+</div></div>
+
+<section id="about"><div class="w">
+<span class="eyebrow">01 / A little about me</span>
+<h2>Numbers, code and curiosity.</h2>
+<p class="sub">A student learning by turning ideas into useful, working projects.</p>
+<div class="ab">
+<div class="pr rv"><small>A simple principle</small><p>Learn it.<br>Build it.<br>Improve it.</p><span>01—03</span></div>
+<div class="abt rv">
+<h3>Turning classroom concepts into things that work.</h3>
+<p>I'm a B.Tech Artificial Intelligence and Data Science student at Arunai Engineering College, Tiruvannamalai. I'm interested in data analytics, data engineering and web development.</p>
+<p>Working on projects helps me connect concepts to real problems and understand how the parts of an application fit together. I'm familiar with data visualization, machine learning concepts and application development.</p>
+<dl class="facts">
+<div class="fact"><dt>Education</dt><dd>B.Tech AI &amp; Data Science</dd></div>
+<div class="fact"><dt>College</dt><dd>Arunai Engineering College</dd></div>
+<div class="fact"><dt>Batch</dt><dd>2024–2028</dd></div>
+<div class="fact"><dt>CGPA</dt><dd>9.0 / 10</dd></div>
+</dl>
+</div>
+</div>
+</div></section>
+
+<section id="skills"><div class="w">
+<span class="eyebrow">02 / Toolkit</span>
+<h2>Technologies I work with.</h2>
+<p class="sub">A practical toolkit built through coursework and project work.</p>
+<div class="sk rv">
+<div class="skr"><h3>Programming Languages</h3><ul><li>Python</li><li>JavaScript</li></ul></div>
+<div class="skr"><h3>Web Technologies</h3><ul><li>HTML</li><li>CSS</li><li>React</li></ul></div>
+<div class="skr"><h3>Data Analytics &amp; Database</h3><ul><li>Excel</li><li>SQL</li><li>Power BI</li></ul></div>
+<div class="skr"><h3>AI &amp; AI-Assisted Development</h3><ul><li>ChatGPT</li><li>Stitch</li><li>AI-assisted coding</li><li>Prompt Design</li><li>NLP</li></ul></div>
+<div class="skr"><h3>Tools &amp; Platforms</h3><ul><li>PyCharm</li><li>VS Code</li><li>Git</li><li>GitHub</li></ul></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="w">
+<span class="eyebrow">03 / Selected work</span>
+<h2>Small projects, big lessons.</h2>
+<p class="sub">Projects at different stages, each one a chance to learn and solve a real need.</p>
+<div class="pl">
+
+<article class="pc rv">
+<div class="ptop"><span class="pn">Project / 01</span><span class="st">Prototype</span></div>
+<h3>GiriGuide</h3><div class="pt">Pilgrim assistance · Web application</div>
+<p>GiriGuide is a web application designed to help pilgrims visiting Tiruvannamalai. It provides useful information about temple visits, Girivalam routes, transportation and parking facilities. The application aims to make trip planning easier and more convenient for visitors. We also worked on providing offline access to important map information.</p>
+<div class="fl"><div><small>Focus</small><span>Temple visits, Girivalam routes, transport, parking and offline maps</span></div><div><small>My contribution</small><span>React frontend and offline access to important map information</span></div></div>
+<ul class="chips"><li>React</li><li>Offline map access</li><li>PostgreSQL (pending)</li></ul>
+<a class="btn s" href="https://github.com/Brindha-2470/GiriGuide-" target="_blank" rel="noopener">View code ↗</a>
+</article>
+
+<article class="pc rv">
+<div class="ptop"><span class="pn">Project / 02</span><span class="st">Mini project</span></div>
+<h3>Sentiment Analysis</h3><div class="pt">Natural language processing · Text classification</div>
+<p>A sentiment analysis system that identifies the sentiment of text as Positive, Negative or Neutral. It uses Natural Language Processing (NLP) techniques to process and analyse text data, and applies TF-IDF for text feature extraction. The project helps understand opinions and emotions expressed through text.</p>
+<div class="fl"><div><small>Focus</small><span>Classifying text as positive, negative or neutral</span></div><div><small>My contribution</small><span>Processed and analysed the text with NLP and applied TF-IDF for feature extraction</span></div></div>
+<ul class="chips"><li>Python</li><li>NLP</li><li>TF-IDF</li><li>Text classification</li></ul>
+<a class="btn s" href="https://github.com/Brindha-2470/Sentiment-analysis-of-product-reviews" target="_blank" rel="noopener">View code ↗</a>
+</article>
+
+<article class="pc rv">
+<div class="ptop"><span class="pn">Project / 03</span><span class="st">In progress</span></div>
+<h3>SkillBridge</h3><div class="pt">Resume-to-internship gap analyzer · Major project</div>
+<p>A tool that compares a student's resume with an internship or job description to find missing skills and skill gaps, so students know what to learn next. The planned workflow takes the resume and job description as input and runs the skill-gap analysis.</p>
+<div class="fl"><div><small>Focus</small><span>Comparing a resume with an internship description to find skill gaps</span></div><div><small>My contribution</small><span>Designing and building it myself; the workflow is planned</span></div></div>
+<ul class="chips"><li>Resume input</li><li>Job description input</li><li>Skill-gap analysis</li></ul>
+</article>
+
+</div>
+</div></section>
+
+<section id="journey"><div class="w">
+<span class="eyebrow">04 / My journey</span>
+<h2>Every project taught me something.</h2>
+<p class="sub">A short snapshot of my academic path and project-based learning so far.</p>
+<ol class="tl">
+<li class="rv"><span class="no">01</span><div><time>2024—2028</time><h3>B.Tech Artificial Intelligence and Data Science</h3><p>Studying at Arunai Engineering College, Tiruvannamalai, with coursework in machine learning, data visualization, data structures and algorithms, databases, computer networks and web technology.</p></div></li>
+<li class="rv"><span class="no">02</span><div><time>Mini project</time><h3>Sentiment Analysis</h3><p>Built a text sentiment classifier using NLP techniques and TF-IDF.</p></div></li>
+<li class="rv"><span class="no">03</span><div><time>Prototype</time><h3>GiriGuide</h3><p>Worked on a pilgrim assistance web application with a React frontend and offline map access.</p></div></li>
+<li class="rv"><span class="no">04</span><div><time>In progress</time><h3>SkillBridge</h3><p>Building a resume-to-internship gap analyzer as a major project.</p></div></li>
+</ol>
+</div></section>
+
+<section id="courses"><div class="w">
+<span class="eyebrow">05 / Courses</span>
+<h2>Certifications &amp; online courses.</h2>
+<p class="sub">Structured learning that supports my project work.</p>
+<div class="cg">
+<div class="cc rv"><small>IBM</small><h3>Data Visualization with R</h3><p>Explored data visualization concepts using R to represent and interpret data.</p></div>
+<div class="cc rv"><small>IBM · ProLearn</small><h3>Machine Learning</h3><p>Built a foundational understanding of machine learning concepts and their applications.</p></div>
+<div class="cc rv"><small>Udemy</small><h3>100 Days of Code: The Complete Python Pro Bootcamp</h3><p>Building Python knowledge through structured lessons, coding exercises and practical projects.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="w">
+<div class="ct rv">
+<span class="eyebrow">06 / Say hello</span>
+<h2>Let's build something useful.</h2>
+<p class="sub">Open to internships in data analytics, data engineering and web development. Find me through my professional profiles or send an email.</p>
+<div class="lc">
+<a href="mailto:brindhasathiyan@gmail.com"><span><b>Email</b><small>brindhasathiyan@gmail.com</small></span><i>↗</i></a>
+<a href="https://github.com/Brindha-2470" target="_blank" rel="noopener"><span><b>GitHub</b><small>Projects and code</small></span><i>↗</i></a>
+<a href="https://www.linkedin.com/in/brindha-s-185b3434a/" target="_blank" rel="noopener"><span><b>LinkedIn</b><small>Connect professionally</small></span><i>↗</i></a>
+<a href="Brindha_S_Resume.pdf" target="_blank" rel="noopener"><span><b>Resume</b><small>Download PDF</small></span><i>↓</i></a>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="w"><span>© 2026 Brindha S. Built with care.</span><nav><a href="#home">Back to top ↑</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></div></footer>
+
+<script>
+(function(){
+var m=document.getElementById("menu"),n=document.getElementById("nav");
+m.addEventListener("click",function(){var o=n.classList.toggle("open");m.setAttribute("aria-expanded",o)});
+n.addEventListener("click",function(e){if(e.target.closest("a")){n.classList.remove("open");m.setAttribute("aria-expanded","false")}});
+var els=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.1});els.forEach(function(e){io.observe(e)})}
+else{els.forEach(function(e){e.classList.add("in")})}
+})();
+</script>
+</body>
+</html>
